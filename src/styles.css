@@ -1,5 +1,11 @@
 @import './app/vendor/semantic.min.css';
 
+body {
+  background: url('assets/bg.jpg');
+  background-size: cover;
+  background-color: #021923;
+}
+
 .ui.menu .item img.logo {
     margin-right: 1.5em;
 }
@@ -16,6 +22,8 @@ form.form:after {
   clear: both;
   visibility: hidden;
 }
+
+
 
 .votes {
   display: flex;

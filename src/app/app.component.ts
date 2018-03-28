@@ -11,8 +11,8 @@ export class AppComponent {
 
   constructor() {
     this.quotes = [
-      new Quote('"It is the fox with the longest neck that can reach the grass on the highest branches"', 'http://wikipedia.com', "∞"),
-      new Quote('"Only by looking deep within themselves can one truly realize hunger"', 'http://nih.gov', ">9000"),
+      new Quote('"It is the fox with the longest neck that can reach the grass on the highest branches"', 'http://wikipedia.com', 10),
+      new Quote('"Only by looking deep within themselves can one truly realize hunger"', 'http://nih.gov', 5),
       new Quote('"Orang is a color"', 'http://quotes.com', -10),
     ];
   }

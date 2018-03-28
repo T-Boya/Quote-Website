@@ -1,25 +1,19 @@
-<form class="ui large form segment">
-    <h3 class="ui header">Add a Link</h3>
-  
-    <div class="field">
-      <label for="title">Title:</label>
-      <input name="title" id="title" #newtitle>  <!-- changed -->
+<form class="input">  
+    <div class="inputs">
+      <input name="title" id="title" placeholder="Quote" #newtitle>
+      <input name="link" id="link" #newlink placeholder = "Link">
     </div>
-    <div class="field">
-      <label for="link">Link:</label>
-      <input name="link" id="link" #newlink> <!-- changed -->
-    </div>
-  
-    <!-- added this button -->
+  <br>
     <button (click)="addQuote(newtitle, newlink)"
-            class="ui positive right floated button">
-      Submit link
+            class="button">
+      Submit Quote
     </button>
   
   </form>
 
-  <div class="ui grid posts">
-      <!-- <app-quote> -->
-      <app-quote *ngFor="let quote of sortedQuotes(); let i = index" [quote]="quote">
-      </app-quote>
+  <div class = "quotes">
+    <div class = "row">
+        <app-quote *ngFor="let quote of sortedQuotes(); let i = index" [quote]="quote" class = "quote">
+          </app-quote>
+    </div>
   </div>
